@@ -1,0 +1,11 @@
+Device Details: 
+./esptool.exe --port COM4 --baud 921600 flash_id
+
+Read/Backup Device Flash
+./esptool.exe --port COM4 --baud 921600 read_flash 0 0x400000 esp8266SolarInverter.bin
+
+Write bin file to flash:
+./esptool.exe --chip esp32/ESP8266EX --port COM3 --baud 921600 --before default_reset --after hard_reset write_flash -z --flash_mode dio --flash_freq 80m --flash_size 4MB 0x0 esp8266SolarInverter.bin
+
+Vendor Device MAC: 48:55:19:df:eb:f9
+Vendor Device Flash size: 4MB
