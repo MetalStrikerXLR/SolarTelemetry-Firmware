@@ -1,9 +1,9 @@
 #include <Arduino.h>
-#include "global.h"
-#include "network_manager.h"
-#include "server_manager.h"
-// #include "output_manager.h"
-// #include "input_manager.h"
+#include "Global.h"
+#include "CoreNetwork.h"
+#include "CoreWebServer.h"
+#include "CoreMQTT.h"
+#include "CoreInverterData.h"
 // #include "time.h"
 
 String stringOne;
