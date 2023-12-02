@@ -1,6 +1,11 @@
 #include <Arduino.h>
+#include "global.h"
+#include "network_manager.h"
+#include "server_manager.h"
+// #include "output_manager.h"
+// #include "input_manager.h"
+// #include "time.h"
 
-bool lcdok = false;                            // LCD not present by default (don't change it)
 String stringOne;
 String swversion = "0.1b";
 
@@ -241,6 +246,23 @@ void setup()
     ; // wait for Serial2 port to connect.
   }
 
+  //Initialize ESP File System
+  initFS();
+  
+  // Initialize Network
+  initWifi();
+
+  //Initialize WebSocket and Web Server
+  initWebSocket();
+  initServer();
+
+  // rtc.setTime(1609459200);  // 1st Jan 2021 00:00:00
+  // configTime(gmtOffset_sec, daylightOffset_sec, ntpServer1, ntpServer2);
+  // struct tm timeinfo;
+  // if (getLocalTime(&timeinfo)){
+  //   rtc.setTimeStruct(timeinfo); 
+  // }
+
   delay(3000);
 }
 
@@ -264,4 +286,10 @@ void loop() {
     }
   }
   stringOne = "";
+
+  // Monitor and manage Network
+  manageNetwork();
+
+  // Manage Web Server Clients
+  ws.cleanupClients();
 }
