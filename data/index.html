@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Solar Monitor</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <h2>Solar Monitor</h2>
+  <h1 id="timeLabel">System Time:</h1>
+  <p id="time">-</p>
+  <h1 id="liveState">Solar Relay State: -</h1>
+
+  <label class="switch">
+    <input id="SolarRelayToggle" type="checkbox" onchange="toggleSolarRelay(this)"><span class="slider"></span>
+  </label>
+</body>
+
+<!-- Javascript -->
+<script src="app.js"></script>
+
+</html>
