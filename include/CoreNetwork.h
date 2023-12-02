@@ -1,5 +1,5 @@
-#ifndef NETWORK_MANAGER_H
-#define NETWORK_MANAGER_H
+#ifndef CORE_NETWORK_H
+#define CORE_NETWORK_H
 
 #include <WiFi.h>
 

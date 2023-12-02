@@ -1,5 +1,5 @@
-#ifndef SERVER_MANAGER_H
-#define SERVER_MANAGER_H
+#ifndef CORE_WEBSERVER_H
+#define CORE_WEBSERVER_H
 
 #include <AsyncTCP.h>
 #include <ESPAsyncWebServer.h>
