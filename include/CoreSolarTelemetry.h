@@ -1,0 +1,6 @@
+#ifndef CORE_SOLAR_TELEMETRY_H
+#define CORE_SOLAR_TELEMETRY_H
+
+
+
+#endif

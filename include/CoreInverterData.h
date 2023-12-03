@@ -1,6 +1,0 @@
-#ifndef CORE_INVERTER_DATA_H
-#define CORE_INVERTER_DATA_H
-
-
-
-#endif

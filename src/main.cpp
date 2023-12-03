@@ -3,7 +3,7 @@
 #include "CoreNetwork.h"
 #include "CoreWebServer.h"
 #include "CoreMQTT.h"
-#include "CoreInverterData.h"
+#include "CoreSolarTelemetry.h"
 // #include "time.h"
 
 String stringOne;
